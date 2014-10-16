@@ -16,7 +16,7 @@ while guessesTaken < guessesLeft:
     guess = input()
     guess = int(guess)
 
-    guessesTaken = guessesTaken + 1
+    guessesTaken += 1
 
     if guess < number:
         triesLeft = str(guessesLeft - guessesTaken)
@@ -33,7 +33,7 @@ if guess == number:
     guessText = str(guessesTaken)
     
     if guessesTaken <= 3 & guessesTaken > 1:
-        print('Wow! You got it in only ' + guessText + ' tries! You\'re amazing at this')
+        print('Wow! ' + myName + ', you got it in only ' + guessText + ' tries! You\'re amazing at this.')
         exit(0)
     if guessesTaken == 1:
         print('GET OUT OF MY HEAD ' + myName.upper())

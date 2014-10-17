@@ -23,7 +23,7 @@ def chooseCave():
 	return cave
 
 def chooseCaveDescript():
-	caveD = random.randint(1,40)
+	caveD = random.randint(1,41)
 	theCave = {
 		1:'dark and spooky...', 
 		2:'dank and smelly', 
@@ -35,6 +35,7 @@ def chooseCaveDescript():
 		8:'painted with no sense of coordination...',
 		9:'hard to describe...',
 		10:'hardly worth entering...',
+		11:'home to a rich orphaned vigilante and his butler...',
 		12:'only slightly better than the last one...',
 		13:'significantly dangerous...',
 		14:'obviously going to get you killed...',
@@ -63,7 +64,8 @@ def chooseCaveDescript():
 		37:'your garden variety cave...',
 		38:'not you garden variety cave...',
 		39:'boring to describe so I won\'t...',
-		40:'starting to give off the impression that it is alive...'
+		40:'starting to give off the impression that it is alive...',
+		41:'the cave now formerly known as cave...'
 	}
 	return str(theCave[caveD])
 
@@ -233,6 +235,8 @@ while playAgain == 'yes' or playAgain == 'y':
 		print('Do you want to play again? (yes or no)')
 		playAgain = input()
 		if playAgain == 'yes' or playAgain == 'y':
+			global totLoot
+			totLoot = 0
 			print('You approach two caves after what feels like a strange amount of time.')
 			time.sleep(2)
 			print('You could have sworn you have done this before, but you haven\'t.')

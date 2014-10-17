@@ -23,13 +23,47 @@ def chooseCave():
 	return cave
 
 def chooseCaveDescript():
-	caveD = random.randint(1,5)
+	caveD = random.randint(1,40)
 	theCave = {
 		1:'dark and spooky...', 
 		2:'dank and smelly', 
 		3:'clean and tidy...', 
 		4:'eerily familiar...',
-		5:'shockingly modern styled...'
+		5:'shockingly modern styled...',
+		6:'covered in spider webs...',
+		7:'dark but glowing in the distance...',
+		8:'painted with no sense of coordination...',
+		9:'hard to describe...',
+		10:'hardly worth entering...',
+		12:'only slightly better than the last one...',
+		13:'significantly dangerous...',
+		14:'obviously going to get you killed...',
+		15:'ringing with the sound of tiny clicks...',
+		16:'tropical in nature...',
+		17:'worth a quick glance...',
+		18:'orange? Yep. orange...',
+		19:'hiding something within, you can feel it...',
+		20:'where your had your heart broken...',
+		21:'starting to give you the creeps...',
+		22:'staring back at you...',
+		23:'fully organic and FDA certified...',
+		24:'one of those late night reruns...',
+		25:'shrouded in mystery...',
+		26:'just a painting on the wall...',
+		27:'...this doesn\'t make any sense...',
+		28:'starting to get on your nerves...',
+		29:'drawing you in...',
+		30:'spooky, but only slightly...',
+		31:'just like the one you live in...',
+		32:'spewing out foul smelling wind...',
+		33:'trying to speak...',
+		34:'awful to look at...',
+		35:'the one you saw in that magazine that one time...',
+		36:'hidden a secret...',
+		37:'your garden variety cave...',
+		38:'not you garden variety cave...',
+		39:'boring to describe so I won\'t...',
+		40:'starting to give off the impression that it is alive...'
 	}
 	return str(theCave[caveD])
 
@@ -134,7 +168,7 @@ def chooseLootDescript():
 		17:'store',
 		18:'assortment'	
 	}
-	return str(lootAdj[lootD] + ' ' + lootName[lootD1] + ' ' + lootType[lootD1])
+	return str(lootAdj[lootD] + ' ' + lootName[lootD1] + ' ' + lootType[lootD2])
 	
 def getLoot():
 	lootMult = 1

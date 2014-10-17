@@ -41,7 +41,7 @@ def chooseDragonDescript():
 		2:' small',
 		3:'n average',
 		4:' baby',
-		5:' tiny'
+		5:' tiny',
 		6:' huge',
 		7:' volcanic',
 		8:' spectral',
